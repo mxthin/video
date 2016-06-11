@@ -1,15 +1,23 @@
-<style>
-#video_light { display: none; position: fixed; left: 50%; top: 15%; margin-left:-400px; width: 800px;height: 460px;background-color: white;z-index:1002;} 
-#video_light a{display:block;position: absolute;right: 0px;top:-20px;color: #FFF;text-decoration: none;font-size: 14px;margin: 0;padding: 0;}
-#video_fade{display: none; position: fixed;top: 0%; left: 0%; width: 100%;height: 100%;background-color: black;z-index:1001; -moz-opacity: 0.8; opacity:.80;filter: alpha(opacity=80); } 
-</style>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<title>QQ-video</title>
+	<style>
+	#video_light { display: none; position: fixed; left: 50%; top: 15%; margin-left:-400px; width: 800px;height: 460px;background-color: white;z-index:1002;} 
+	#video_light a{display:block;position: absolute;right: 0px;top:-20px;color: #FFF;text-decoration: none;font-size: 14px;margin: 0;padding: 0;}
+	#video_fade{display: none; position: fixed;top: 0%; left: 0%; width: 100%;height: 100%;background-color: black;z-index:1001; -moz-opacity: 0.8; opacity:.80;filter: alpha(opacity=80); } 
+	</style>
+</head>
+<body>
+	<a href="javascript:void(0)" onclick="document.getElementById('video_light').style.display='block';document.getElementById('video_fade').style.display='block';document.getElementById('video_ifr').src='http://v.qq.com/iframe/player.html?vid=t013468ls0d&amp;auto=1&amp;width=800&amp;&amp;height=460'">
+	<img style="width:432px;height:248px" src="images/pic.jpg">
+	</a>
 
-<a href="javascript:void(0)" onclick="document.getElementById('video_light').style.display='block';document.getElementById('video_fade').style.display='block';document.getElementById('video_ifr').src='http://v.qq.com/iframe/player.html?vid=x0153ia78m7&amp;auto=1&amp;width=800&amp;&amp;height=460'">
-<img style="width:432px;height:248px" src="http://www.123aiyue.cn/ayfile/public/images/lsk.jpg">
-</a>
-
-<div id="video_light">
-	<iframe id="video_ifr" class="video_iframe" style="z-index: 1; width: 800px !important; height: 460px !important; overflow: hidden;"frameborder="0"  allowfullscreen="" src="" scrolling="no"></iframe>
-	<a href = "javascript:void(0)" onclick = "document.getElementById('video_light').style.display='none';document.getElementById('video_fade').style.display='none';document.getElementById('video_ifr').src='none' ">关闭</a>
-</div>
-<div id="video_fade" onclick = "document.getElementById('video_light').style.display='none';document.getElementById('video_fade').style.display='none';document.getElementById('video_ifr').src='none' "></div>
+	<div id="video_light">
+		<iframe id="video_ifr" class="video_iframe" style="z-index: 1; width: 800px !important; height: 460px !important; overflow: hidden;"frameborder="0"  allowfullscreen="" src="" scrolling="no"></iframe>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('video_light').style.display='none';document.getElementById('video_fade').style.display='none';document.getElementById('video_ifr').src='none' ">closed</a>
+	</div>
+	<div id="video_fade" onclick = "document.getElementById('video_light').style.display='none';document.getElementById('video_fade').style.display='none';document.getElementById('video_ifr').src='none' "></div>
+</body>
+</html>
